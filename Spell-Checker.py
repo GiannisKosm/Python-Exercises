@@ -24,11 +24,11 @@ class BloomFilter:
  
 bf = BloomFilter(500000, 7)
  
-lines = open("/Users/GiannisKosmopoulos/Desktop/american-english.txt").read().splitlines()
+lines = open("/Users/Desktop/american-english.txt").read().splitlines()
 for line in lines:
     bf.add(line)
 #άνοιγμα αρχείου και αποθήκευση περιεχομένου σε μεταβλητή data
-fin=open("/Users/GiannisKosmopoulos/Desktop/text.txt","r")
+fin=open("/Users/Desktop/text.txt","r")
 data=fin.read().replace('\n','')
 
 #έλεγχος για το αν οι λέξεις της πρότασης ανήκουν στο λεξικό και εκτύπωση αποτελέσματος
